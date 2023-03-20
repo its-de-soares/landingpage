@@ -11,9 +11,115 @@
             background-color:#71836A;
             height: 67px;
         }
-        body{
+        .todo{
             background-image: url(assets/background.jpg);
-            background-size: 100%;
+            background-size: 100% 957px;
+            background-repeat: no-repeat;
+        }
+
+        .lateral{
+            width: 649px;
+            height: 957px;
+            background-color: rgba(217, 217, 217, 71%);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        h1{
+            position: absolute;
+            width: 593px;
+            height: 80px;
+            left: 28px;
+            top: 110px;
+            font-family: 'Abril Fatface';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+            color: #000000;
+        }
+        
+        h2{
+            position: absolute;
+            width: 443px;
+            height: 56px;
+            left: 103px;
+            top: 233px;
+            font-family: 'Raleway';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #000000;
+        }
+
+        p{
+            position: absolute;
+            width: 553px;
+            height: 138px;
+            left: 48px;
+            top: 310px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            color: #000000;
+        }
+
+        input{
+            position: absolute;
+            width: 527px;
+            height: 44px;
+            left: 57px;
+            box-shadow: inset 0px 4px 12px #71836A;
+            background: #80A969;
+            border-radius: 38px;
+        }
+
+        #name{
+            top: 491px;
+        }
+
+        #email{
+            top: 556px;
+        }
+
+        input::placeholder{
+            color: #fff;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        ul{
+            position: absolute;
+            width: 519px;
+            height: 44px;
+            left: 65px;
+            top: 621px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .enviar{
+            position: absolute;
+            width: 294px;
+            height: 63px;
+            left: 159px;
+            top: 700px;
+            filter: drop-shadow(0px 4px 12px #71836A);
+            background: #DDA249;
+            border-radius: 38px;
         }
 
     </style>
@@ -28,35 +134,33 @@
             </nav>
         </div>
     </header>
+    <div class="todo">
+        <main class="lateral">
+            <div id="txt" class="container">
+                <h1>TENHA TODAS AS ROUPAS DOS SEUS SONHOS</h1>
+                <h2>Aprenda a fazer suas próprias peças de roupas em casa</h2>
+                <p>Baixe nossa apostila de modelagem gratuitamente e aprenda a fazer 
+                todas as peças de roupas dos seus sonhos.<br><br>
+                São mais de 30 moldes e passo a passo de como faze-los, tudo sem nenhum custo!
+                Obtenha nosso material em menos de 5 minutos.</p>
 
-    <main>
-        <div id="txt" class="container">
-            <h1>TENHA TODAS AS ROUPAS DOS SEUS SONHOS</h1>
-            <h2>Aprenda a fazer suas próprias peças em casa</h2>
-            <p>Baixe nossa apostila de modelagem gratuitamente e aprenda a fazer 
-            todas as peças de roupas dos seus sonhos.</p>
-            <p>São mais de 30 moldes e passo a passo de como faze-los, tudo sem nenhum custo!
-            Obtenha nosso material em menos de 5 minutos.</p>
-        </div>
-
-        <div id="form">
-            <form action="">
-                <label for="name">
-                    <input type="text" id="name" required placeholder="Seu Nome" />
-                </label><br>
-                <label for="email">
-                    <input type="email" id="email" required placeholder="Seu melhor e-mail">
-                </label><br>
-                <ul>
-                    <li>Ao preencher o formulário, concordo em receber comunicações de acordo com 
-                        meus interesses.</li>
-                    <li> Ao informar meus dados, eu concordo com a Política de privacidade.</li>
-                </ul>
-                <button>Receber Material</button>
-            </form>
-        </div>
-
-    </main>
+               <form action="">
+                    <label for="name">
+                        <input type="text" id="name" required placeholder="Seu Nome" />
+                    </label><br>
+                    <label for="email">
+                        <input type="email" id="email" required placeholder="Seu melhor e-mail">
+                    </label><br>
+                    <ul>
+                        <li>Ao preencher o formulário, concordo em receber comunicações de acordo com 
+                            meus interesses.</li>
+                        <li> Ao informar meus dados, eu concordo com a Política de privacidade.</li>
+                    </ul>
+                    <button class="enviar">Receber Material</button>
+                </form>
+            </div>
+        </main>
+    </div>
 
     <script src="Assets/js/bootstrap.bundle.min.js"></script>
     <script src="Assets/js/bootstrap.min.js"></script>
